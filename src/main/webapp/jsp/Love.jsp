@@ -1,6 +1,7 @@
+<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Love</title>
         <!-- 一个点是上一层目录，两个点表示上两层目录 -->
