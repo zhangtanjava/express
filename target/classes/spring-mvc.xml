@@ -55,4 +55,5 @@
 	<mvc:resources location="/css/" mapping="/css/**" />
 	<mvc:resources location="/images/" mapping="/images/**" />
 	<mvc:resources location="/mp3/" mapping="/mp3/**" />
+	<mvc:resources location="/scripts/" mapping="/scripts/**" />
 </beans>

@@ -15,6 +15,13 @@
 			<version>3.8.1</version><!-- 也可以用把值写到properties中，与springVersion一样 -->
 			<scope>test</scope>
 		</dependency>
+		<!-- ********************Spring test******************************* -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-test</artifactId>
+			<version>${springVersion}</version><!-- 也可以用把值写到properties中，与springVersion一样 -->
+			<scope>test</scope>
+		</dependency>
 		<!-- *******************fastjson************************* -->
 		<dependency>
 			<groupId>com.alibaba</groupId>
@@ -98,6 +105,22 @@
 			<version>2.2</version>
 			<type>jar</type>
 		</dependency>
+		<!-- aspect 需要的jar -->
+		<dependency>
+	      <groupId>org.aspectj</groupId>
+	      <artifactId>aspectjrt</artifactId>
+	      <version>1.8.9</version>
+	    </dependency>
+	    <dependency>
+	      <groupId>org.aspectj</groupId>
+	      <artifactId>aspectjtools</artifactId>
+	      <version>1.8.9</version>
+	    </dependency>
+	    <dependency>
+	      <groupId>org.aspectj</groupId>
+	      <artifactId>aspectjweaver</artifactId>
+	      <version>1.7.4</version>
+	    </dependency>
   </dependencies>
   <build>
     <finalName>express</finalName>

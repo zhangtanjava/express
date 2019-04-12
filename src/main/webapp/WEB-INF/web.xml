@@ -18,12 +18,48 @@ xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns
             <param-value>classpath:spring-mvc.xml</param-value>  
         </init-param>
         <load-on-startup>1</load-on-startup>  
-    </servlet>  
+    </servlet> 
+    <!-- jsp太大添加以下配置，mappedfile ： 是否对每个输入行都用一条print语句来生成静态内容，以方便调试。缺省为true。
+这样做，只是让Tomcat不为JSP每行都添加print语句，但是实际上，当文件达到一定程度，还是会发生错误，所以最根本的还是尽量减小JSP大小。 --> 
+    <servlet>
+    <servlet-name>jsp</servlet-name>
+    <servlet-class>org.apache.jasper.servlet.JspServlet</servlet-class>
+    <init-param>
+        <param-name>mappedfile</param-name>
+        <param-value>false</param-value>
+    </init-param>
+	</servlet>
+
     <servlet-mapping>  
         <servlet-name>dispatcher</servlet-name>  
         <!-- 拦截所有/ 的请求,交给DispatcherServlet处理,性能最好 -->  
         <url-pattern>/</url-pattern>  
     </servlet-mapping> 
+    <!--静态资源，符合相应的【url-pattern】规则的访问，就会由默认servlet处理 -->
+    <servlet-mapping>
+        <servlet-name>default</servlet-name>
+        <url-pattern>*.css</url-pattern>
+    </servlet-mapping>
+ 
+    <servlet-mapping>
+        <servlet-name>default</servlet-name>
+        <url-pattern>*.png</url-pattern>
+    </servlet-mapping>
+ 
+    <servlet-mapping>
+        <servlet-name>default</servlet-name>
+        <url-pattern>*.jpg</url-pattern>
+    </servlet-mapping>
+ 
+    <servlet-mapping>
+        <servlet-name>default</servlet-name>
+        <url-pattern>*.gif</url-pattern>
+    </servlet-mapping>
+        <servlet-mapping> 
+            <servlet-name>default</servlet-name> 
+            <url-pattern>*.html</url-pattern> 
+    </servlet-mapping>
+    
     <!-- 配置编码格式 -->  
     	<filter>  
         <filter-name>encodingFilter</filter-name>  

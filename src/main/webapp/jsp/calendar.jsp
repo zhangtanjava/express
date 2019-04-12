@@ -6,14 +6,14 @@
 	<meta http-equiv="Pragma" content="no-cache">
 	<meta charset="UTF-8">
 
-	<title>tan love qing</title>
+	<title>xiaoming love xiaohong</title>
 	<link rel="stylesheet" href="../css/calendar/min.css">
 <script src="../js/calendar/share.js"></script></head>
 <body class="ft-absolute-nav">
 	<div class="flowtime" style="transform: translateX(-500%) translateY(0%);">
 		<div class="ft-section section-1" data-id="__section-1" data-prog="__1" id="">
 			<div id="" class="ft-page page-1 past-section" data-id="__page-1" data-prog="__1">
-				<p class="text1">tan love qing</p>
+				<p class="text1">xiaoming love xiaohong</p>
 				<p class="text2">按键盘 "↓" 开始倾听我的祝福</p>
 			</div>
 			<div id="" class="ft-page page-2 past-section future-page" data-id="__page-2" data-prog="__2">
